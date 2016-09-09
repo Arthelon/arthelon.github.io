@@ -1,0 +1,52 @@
+a {
+	color: blue;
+	text-decoration: none;
+}
+a:hover {
+	border-bottom: 0.1px solid blue;
+	cursor: pointer;
+}
+h1, h2, h3, h4 {
+	font-weight: normal;
+	margin-bottom: 0
+}
+p {
+	margin-top: 0.3em;
+	line-height: 140%;
+	margin-bottom: 0.3em;
+}
+body {
+	font-family: 'Inconsolata', monospace;
+}
+.container {
+	padding: 1em 20em 0 20em;
+}
+
+#header {
+	margin-top: 2em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+#links {
+	display: flex;
+	flex-direction: row;
+}
+
+#links a {
+	margin-left: 1em;
+}
+#projects p {
+	padding-left: 1em;
+}
+#about {
+	margin-top: 2em;
+}
+#about h2 {
+	margin-bottom: 0.5em;
+}
+#about h3 {
+	font-style: italic;
+}
