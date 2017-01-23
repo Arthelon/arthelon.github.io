@@ -22,6 +22,27 @@ body {
 	padding: 1em 20em 0 20em;
 }
 
+@media(max-width: 1024px) {
+	.container {
+		padding: 1em 8em 0 8em;
+	}
+
+	body {
+		font-size: 1.1em;
+	}
+}
+
+@media(max-width: 430px) {
+	.container {
+		padding: 0em 3em 0 3em;
+	}
+	
+	#header {
+		display: block !important;
+	}
+
+}
+
 #header {
 	margin-top: 2em;
 	display: flex;
@@ -31,12 +52,13 @@ body {
 }
 
 #links {
+	margin-top: 1em;
 	display: flex;
 	flex-direction: row;
 }
 
 #links a {
-	margin-left: 1em;
+	margin-right: 1em;
 }
 #projects p {
 	padding-left: 1em;
