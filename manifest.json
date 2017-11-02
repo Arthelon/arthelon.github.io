@@ -1,0 +1,14 @@
+{
+  "name": "Daniel Hsing",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "description": "Daniel Hsing: bleeding-edge JavaScript, OSS, high school",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    }
+  ]
+}
