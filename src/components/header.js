@@ -1,20 +1,23 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import styled from 'react-emotion'
+
+const Container = styled('div')`
+  margin-bottom: 1.45rem;
+  background: rebeccapurple;
+`
+
+const HeaderContent = styled('div')`
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  @media (max-width: 540px) {
+    padding: 1rem 1rem;
+  }
+`
 
 const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
+  <Container>
+    <HeaderContent>
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
@@ -26,8 +29,8 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-    </div>
-  </div>
+    </HeaderContent>
+  </Container>
 )
 
 export default Header
