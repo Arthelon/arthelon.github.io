@@ -1,213 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="manifest" href="manifest.json" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Daniel Hsing: GT'22, bleeding-edge JavaScript, OSS"
+    />
+    <meta name="keywords" content="daniel hsing personal hackathon student" />
+    <meta name="language" content="en-us" />
+    <meta name="distribution" content="Global" />
+    <meta name="rating" content="General" />
+    <meta name="creator" content="Daniel Hsing" />
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="manifest" href="manifest.json">
-	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-	<meta name="description" content="Daniel Hsing: GT'22, bleeding-edge JavaScript, OSS" />
-	<meta name="keywords" content="daniel hsing personal hackathon student" />
-	<meta name="language" content="en-us" />
-	<meta name="distribution" content="Global" />
-	<meta name="rating" content="General" />
-	<meta name="creator" content="Daniel Hsing" />
+    <title>Home - Daniel Hsing</title>
+    <link rel="icon" href="favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inconsolata:400,700"
+      rel="stylesheet"
+    />
+    <style>
+      a {
+        color: blue;
+        text-decoration: none;
+      }
 
-	<title>Home - Daniel Hsing</title>
-	<link rel="icon" href="favicon.png">
-	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
-	<style>
-		a {
-			color: blue;
-			text-decoration: none;
-		}
+      a:hover {
+        border-bottom: 0.1px solid blue;
+        cursor: pointer;
+      }
 
-		a:hover {
-			border-bottom: 0.1px solid blue;
-			cursor: pointer;
-		}
+      h1 {
+        margin-top: 0;
+      }
 
-		h1 {
-			margin-top: 0;
-		}
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-weight: normal;
+        margin-bottom: 0;
+      }
 
-		h1,
-		h2,
-		h3,
-		h4 {
-			font-weight: normal;
-			margin-bottom: 0;
-		}
+      p {
+        margin-top: 0.3em;
+        line-height: 140%;
+        margin-bottom: 0.3em;
+      }
 
-		p {
-			margin-top: 0.3em;
-			line-height: 140%;
-			margin-bottom: 0.3em;
-		}
+      body {
+        font-family: "Inconsolata", monospace;
+        overflow-wrap: break-word;
+        padding-bottom: 1.5em;
+        padding-top: 1.5em;
+      }
 
-		body {
-			font-family: 'Inconsolata', monospace;
-			overflow-wrap: break-word;
-			padding-bottom: 1.5em;
-			padding-top: 1.5em;
-		}
+      .container {
+        padding: 1em 20em;
+      }
 
-		.container {
-			padding: 1em 20em;
-		}
+      @media (max-width: 1024px) {
+        .container {
+          padding: 1em 6em 1em 6em;
+        }
 
-		@media(max-width: 1024px) {
-			.container {
-				padding: 1em 6em 1em 6em;
-			}
+        body {
+          font-size: 1.1em;
+        }
+      }
 
-			body {
-				font-size: 1.1em;
-			}
-		}
+      @media (max-width: 430px) {
+        .container {
+          padding: 0.5em 2em;
+        }
 
-		@media(max-width: 430px) {
-			.container {
-				padding: 0.5em 2em;
-			}
+        #header {
+          display: block !important;
+        }
+      }
 
-			#header {
-				display: block !important;
-			}
-		}
+      #header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+      }
 
-		#header {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			align-items: baseline;
-		}
+      #links {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: row;
+      }
 
-		#links {
-			margin-top: 1em;
-			display: flex;
-			flex-direction: row;
-		}
+      #links a {
+        margin-right: 1em;
+      }
 
-		#links a {
-			margin-right: 1em;
-		}
+      #projects p {
+        padding-left: 1em;
+      }
 
-		#projects p {
-			padding-left: 1em;
-		}
+      #about {
+        margin-top: 2em;
+      }
 
-		#about {
-			margin-top: 2em;
-		}
+      #about h2 {
+        margin-bottom: 0.5em;
+      }
 
-		#about h2 {
-			margin-bottom: 0.5em;
-		}
+      #about h3 {
+        font-style: italic;
+      }
+    </style>
+  </head>
 
-		#about h3 {
-			font-style: italic;
-		}
-	</style>
-</head>
+  <body>
+    <div class="container" id="header">
+      <h1>Daniel Hsing</h1>
+      <div id="links">
+        <a href="/about">about</a>
+        <a href="resume.pdf">resume</a>
+        <a href="https://github.com/Arthelon">github</a>
+        <a href="https://linkedin.com/in/danielhsing">linkedin</a>
+        <a href="https://twitter.com/arthelon_">twitter</a>
+      </div>
+    </div>
+    <div class="container" id="projects">
+      <h2>Public things I've been working on</h2>
+      <p>
+        2020 May => 2020 Aug -
+        <a href="https://github.com/oursky/gitlint-bot"> oursky/gitlint-bot </a>
+      </p>
+      <p>
+        2020 May => 2020 May -
+        <a href="https://github.com/authgear/auth-landing"
+          >authgear/auth-landing</a
+        >
+      </p>
+      <p>
+        2020 Jan => 2020 Apr -
+        <a href="https://github.com/GTBitsOfGood/medshare"
+          >gtbitsofgood/medshare</a
+        >
+      </p>
+      <p>
+        2019 Sep => 2019 Dec -
+        <a href="https://github.com/GTBitsOfGood/bog-vms"
+          >gtbitsofgood/bog-vms</a
+        >
+      </p>
+      <p>
+        2018 Dec => 2019 Apr -
+        <a href="https://github.com/perlin-network/lens">perlin-network/lens</a>
+      </p>
+      <p>
+        2018 Aug => 2019 Feb -
+        <a href="https://github.com/robojackets/apiary">robojackets/apiary</a>
+      </p>
+      <p>
+        2016 Dec => 2018 Sep -
+        <a href="https://github.com/bookbrainz/bookbrainz-site"
+          >bookbrainz/bookbrainz-site</a
+        >
+      </p>
+      <h2>Personal Projects</h2>
+      <p>
+        2019 Jan 21 -
+        <a href="https://github.com/Arthelon/lindseys-shoes">lindseys shoes</a>
+      </p>
+      <p>
+        2017 Aug 11 -
+        <a href="https://www.supportintlfoundation.org"
+          >supportintlfoundation static site (v3)</a
+        >
+      </p>
+      <p>
+        2017 May 28 -
+        <a href="https://github.com/Arthelon/support_website"
+          >supportintlfoundation static site (v2)</a
+        >
+      </p>
+      <p>
+        2016 Oct 13 -
+        <a href="https://github.com/Arthelon/imgclip">imgclip</a>
+      </p>
+      <p>
+        2016 Aug 01 -
+        <a href="https://github.com/Arthelon/spf-express">spf-express</a>
+      </p>
+      <p>
+        2016 May 18 -
+        <a href="https://github.com/Arthelon/submission">submission</a>
+      </p>
+      <p>
+        2016 Feb 14 -
+        <a href="https://github.com/Arthelon/PyCast3">pyCast3</a>
+      </p>
+      <p>
+        2015 Oct 12 -
+        <a href="http://www.supportlearning.org">support!</a>
+      </p>
+      <p>
+        2015 May 05 -
+        <a
+          href="https://chrome.google.com/webstore/detail/snap-note/bcddlnpbfpldhhgpjkoedhcnjchldcff?authuser=1"
+          >snap note</a
+        >
+      </p>
+      <h2>Hackathons</h2>
+      <p>
+        2020 Sep 11 -
+        <a href="https://www.quackhacks.tech/">quackhacks</a> (mentor)
+      </p>
+      <p>
+        2018 Oct 21 -
+        <a href="https://devpost.com/software/mathdocs">hackgt 2018</a> (best
+        accessibility hack)
+      </p>
+      <p>
+        2017 Jun 04 -
+        <a href="http://www.hackathon.io/tanyo">angelhack hk 2017</a> (.tech
+        domains challenge)
+      </p>
+      <p>
+        2017 Jan 21 -
+        <a href="https://devpost.com/software/crowdsniper">imaginehack hk</a>
+      </p>
+      <p>
+        2016 Nov 25 -
+        <a href="https://github.com/Arthelon/railtime-server">hacktrainhk</a>
+        (railway challenge prize)
+      </p>
+      <p>
+        2016 Nov 12 -
+        <a href="https://github.com/Arthelon/bitgraph-client"
+          >bitwisehacks fintech series pt 2</a
+        >
+        (first place and best azure project)
+      </p>
+      <p>
+        2016 Oct 22 -
+        <a href="https://github.com/mmuallem/cxDiscovery"
+          >cathay pacific hackathon</a
+        >
+        (grand prize)
+      </p>
+      <p>
+        2016 Oct 02 -
+        <a href="https://github.com/rsmohamad/TexBook">hkust hackjam</a>
+      </p>
+      <p>
+        2016 Sep 17 -
+        <a href="https://github.com/bitwise-cyberport"
+          >bitwisehacks fintech series pt 1</a
+        >
+        (second place)
+      </p>
+      <p>
+        2016 Sep 02 - <a href="http://hypehacks.com">hypehacks</a> (organizer)
+      </p>
+      <p>
+        2016 Aug 06 -
+        <a href="https://github.com/platypie-paperclip-hax-2016"
+          >bitwisehacks x paperclip</a
+        >
+        (second place)
+      </p>
+      <p>
+        2016 May 21 -
+        <a href="https://github.com/FooedBar">angelhack hk 2016</a>
+      </p>
+      <p>
+        2016 Feb 17 -
+        <a href="https://github.com/BitwiseHacks-CIS-2016"
+          >bitwisehacks x hkis</a
+        >
+        (top overall)
+      </p>
+      <h2>Other</h2>
+      <p>
+        2017 Nov 28 -
+        <a
+          href="https://opensource.googleblog.com/2017/10/welcoming-25-mentor-organizations-for.html"
+          >google code-in</a
+        >
+        (mentor for metabrainz fdn)
+      </p>
+      <p>
+        2017 Jan 31 -
+        <a
+          href="https://opensource.googleblog.com/2017/01/announcing-google-code-in-2016-winners.html"
+          >google code-in</a
+        >
+        (grand prize winner)
+      </p>
+    </div>
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      );
 
-<body>
-	<div class="container" id="header">
-		<h1>Daniel Hsing</h1>
-		<div id="links">
-			<a href="/about">about</a>
-			<a href="resume.pdf">resume</a>
-			<a href="https://github.com/Arthelon">github</a>
-			<a href="https://linkedin.com/in/danielhsing">linkedin</a>
-			<a href="https://twitter.com/arthelon_">twitter</a>
-		</div>
-	</div>
-	<div class="container" id="projects">
-		<h2>Public things I've been working on</h2>
-		<p>2020 Jan => 2020 Apr - <a href="https://github.com/GTBitsOfGood/medshare">gtbitsofgood/medshare</a></p>
-		<p>2019 Sep => 2019 Dec - <a href="https://github.com/GTBitsOfGood/bog-vms">gtbitsofgood/bog-vms</a></p>
-		<p>2018 Dec => 2019 Apr - <a href="https://github.com/perlin-network/lens">perlin-network/lens</a></p>
-		<p>2018 Aug => 2019 Feb - <a href="https://github.com/robojackets/apiary">robojackets/apiary</a></p>
-		<p>2016 Dec => 2018 Sep - <a href="https://github.com/bookbrainz/bookbrainz-site">bookbrainz/bookbrainz-site</a></p>
-		<h2>Personal Projects</h2>
-		<p>2019 Jan 21 - <a href="https://github.com/Arthelon/lindseys-shoes">lindseys shoes</a></p>
-		<p>2017 Aug 11 -
-			<a href="https://www.supportintlfoundation.org">supportintlfoundation static site (v3)</a>
-		</p>
-		<p>2017 May 28 -
-			<a href="https://github.com/Arthelon/support_website">supportintlfoundation static site (v2)</a>
-		</p>
-		<p>2016 Oct 13 -
-			<a href="https://github.com/Arthelon/imgclip">imgclip</a>
-		</p>
-		<p>2016 Aug 01 -
-			<a href="https://github.com/Arthelon/spf-express">spf-express</a>
-		</p>
-		<p>2016 May 18 -
-			<a href="https://github.com/Arthelon/submission">submission</a>
-		</p>
-		<p>2016 Feb 14 -
-			<a href="https://github.com/Arthelon/PyCast3">pyCast3</a>
-		</p>
-		<p>2015 Oct 12 -
-			<a href="http://www.supportlearning.org">support!</a>
-		</p>
-		<p>2015 May 05 -
-			<a href="https://chrome.google.com/webstore/detail/snap-note/bcddlnpbfpldhhgpjkoedhcnjchldcff?authuser=1">snap note</a>
-		</p>
-		<h2>Hackathons</h2>
-		<p>2020 Sep 11 - <a href="https://www.quackhacks.tech/">quackhacks</a> (mentor)</p>
-		<p>2018 Oct 21 - <a href="https://devpost.com/software/mathdocs">hackgt 2018</a> (best accessibility hack)</p>
-		<p>2017 Jun 04 -
-			<a href="http://www.hackathon.io/tanyo">angelhack hk 2017</a> (.tech domains challenge)</p>
-		<p>2017 Jan 21 -
-			<a href="https://devpost.com/software/crowdsniper">imaginehack hk</a>
-		</p>
-		<p>2016 Nov 25 -
-			<a href="https://github.com/Arthelon/railtime-server">hacktrainhk</a> (railway challenge prize)</p>
-		<p>2016 Nov 12 -
-			<a href="https://github.com/Arthelon/bitgraph-client">bitwisehacks fintech series pt 2</a> (first place and best
-			azure project)</p>
-		<p>2016 Oct 22 -
-			<a href="https://github.com/mmuallem/cxDiscovery">cathay pacific hackathon</a> (grand prize)</p>
-		<p>2016 Oct 02 -
-			<a href="https://github.com/rsmohamad/TexBook">hkust hackjam</a>
-		</p>
-		<p>2016 Sep 17 -
-			<a href="https://github.com/bitwise-cyberport">bitwisehacks fintech series pt 1</a> (second place)</p>
-		<p>2016 Sep 02 -
-			<a href="http://hypehacks.com">hypehacks</a> (organizer)</p>
-		<p>2016 Aug 06 -
-			<a href="https://github.com/platypie-paperclip-hax-2016">bitwisehacks x paperclip</a> (second place)</p>
-		<p>2016 May 21 -
-			<a href="https://github.com/FooedBar">angelhack hk 2016</a>
-		</p>
-		<p>2016 Feb 17 -
-			<a href="https://github.com/BitwiseHacks-CIS-2016">bitwisehacks x hkis</a> (top overall)</p>
-		<h2>Other</h2>
-		<p>2017 Nov 28 -
-			<a href="https://opensource.googleblog.com/2017/10/welcoming-25-mentor-organizations-for.html">google code-in</a>
-			(mentor for metabrainz fdn)</p>
-		<p>2017 Jan 31 -
-			<a href="https://opensource.googleblog.com/2017/01/announcing-google-code-in-2016-winners.html">google code-in</a>
-			(grand prize winner)</p>
-	</div>
-	<script>
-		(function (i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r;
-			i[r] = i[r] || function () {
-				(i[r].q = i[r].q || []).push(arguments)
-			}, i[r].l = 1 * new Date();
-			a = s.createElement(o),
-				m = s.getElementsByTagName(o)[0];
-			a.async = 1;
-			a.src = g;
-			m.parentNode.insertBefore(a, m)
-		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-		ga('create', 'UA-88089392-1', 'auto');
-		ga('send', 'pageview');
-	</script>
-</body>
-
+      ga("create", "UA-88089392-1", "auto");
+      ga("send", "pageview");
+    </script>
+  </body>
 </html>
