@@ -1,99 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="manifest" href="manifest.json" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Daniel Hsing: Front-end Engineer, bleeding-edge JavaScript, OSS"
+    />
+    <meta
+      name="keywords"
+      content="daniel hsing personal frontend engineer portfolio"
+    />
+    <meta name="language" content="en-us" />
+    <meta name="distribution" content="Global" />
+    <meta name="rating" content="General" />
+    <meta name="creator" content="Daniel Hsing" />
+    <base href="https://arthelon.github.io" />
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="manifest" href="manifest.json">
-	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-	<meta name="description" content="Daniel Hsing: GT'22, bleeding-edge JavaScript, OSS" />
-	<meta name="keywords" content="daniel hsing personal hackathon student" />
-	<meta name="language" content="en-us" />
-	<meta name="distribution" content="Global" />
-	<meta name="rating" content="General" />
-	<meta name="creator" content="Daniel Hsing" />
+    <title>About - Daniel Hsing</title>
+    <link rel="icon" href="favicon.png " />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inconsolata:400,700"
+      rel="stylesheet"
+    />
+    <style>
+      a {
+        color: blue;
+        text-decoration: none;
+      }
 
-	<title>About - Daniel Hsing</title>
-	<link rel="icon" href="favicon.png ">
-	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
-	<style>
-		a {
-			color: blue;
-			text-decoration: none;
-		}
+      a:hover {
+        border-bottom: 0.1px solid blue;
+        cursor: pointer;
+      }
 
-		a:hover {
-			border-bottom: 0.1px solid blue;
-			cursor: pointer;
-		}
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-weight: normal;
+        margin-bottom: 0;
+      }
 
-		h1,
-		h2,
-		h3,
-		h4 {
-			font-weight: normal;
-			margin-bottom: 0
-		}
+      p {
+        margin-top: 0.3em;
+        line-height: 140%;
+        margin-bottom: 0.3em;
+      }
 
-		p {
-			margin-top: 0.3em;
-			line-height: 140%;
-			margin-bottom: 0.3em;
-		}
+      body {
+        font-family: "Inconsolata", monospace;
+        overflow-wrap: break-word;
+        padding-bottom: 1.5em;
+        padding-top: 1.5em;
+      }
 
-		body {
-			font-family: 'Inconsolata', monospace;
-			overflow-wrap: break-word;
-			padding-bottom: 1.5em;
-			padding-top: 1.5em;
-		}
+      .container {
+        padding: 1em 20em;
+      }
 
-		.container {
-			padding: 1em 20em;
-		}
+      @media (max-width: 1024px) {
+        .container {
+          padding: 1em 6em 1em 6em;
+        }
 
-		@media(max-width: 1024px) {
-			.container {
-				padding: 1em 6em 1em 6em;
-			}
+        body {
+          font-size: 1.1em;
+        }
+      }
 
-			body {
-				font-size: 1.1em;
-			}
-		}
+      @media (max-width: 430px) {
+        .container {
+          padding: 0.5em 2em;
+        }
+      }
 
-		@media(max-width: 430px) {
-			.container {
-				padding: 0.5em 2em;
-			}
-		}
+      #about {
+        margin-top: 2em;
+      }
 
-		#about {
-			margin-top: 2em;
-		}
+      #about h2 {
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
 
-		#about h2 {
-			margin-top: 1em;
-		}
+      #about h3 {
+        font-style: italic;
+      }
+    </style>
+  </head>
 
-		#about h3 {
-			font-style: italic;
-		}
-	</style>
-</head>
-
-<body>
-	<div class="container " id="about ">
-		<a href="/ ">
-			<-- back</a>
-				<h2>About Me</h2>
-				<p>I'm a full-stack javascript developer and third year college student at Georgia Tech (graduating may 2022). I frequently attend local hackathons, contribute
-					to open source, and enjoy diving deep into learning new tools/skills.</p>
-				<br />
-				<p>BTC: 1M4YARjBT4SbHD9ieCeqrLkZ8gpmhp26T4</p>
-				<p>ETH: 0x207F9C9084eF8cEB9846Ee014Bf15dB74190c1C9</p>
-				<p>DASH: XdNBZUddWXL1BpSNXLuZzmBvYBZTt3xa1k</p>
-	</div>
-</body>
-
+  <body>
+    <div class="container" id="about">
+      <a href="/"> <-- back</a>
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm an ex-Meta Front-end Engineer looking for a new
+        Full-stack/Front-end role.
+        <br />
+        <br />
+        I have 3 years of full-time/part-time development experience developing
+        full-stack web apps using React, Vue, Svelte, and Gatsby. My focus is
+        front-end development but I am also proficient with JS/TypeScript/PHP
+        backends. I've also had some exposure to Golang and Python in industry.
+        <br />
+        <br />
+        I've been churning out side-projects for non-profits during college and
+        at hackathons for the past 6 years. Feel free to check out some of my
+        work <a href="/">here</a>
+      </p>
+      <br />
+      <p>BTC: 1M4YARjBT4SbHD9ieCeqrLkZ8gpmhp26T4</p>
+      <p>ETH: 0x207F9C9084eF8cEB9846Ee014Bf15dB74190c1C9</p>
+      <p>DASH: XdNBZUddWXL1BpSNXLuZzmBvYBZTt3xa1k</p>
+    </div>
+  </body>
 </html>
